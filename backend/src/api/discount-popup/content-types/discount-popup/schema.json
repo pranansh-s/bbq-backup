@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "discount_popups",
+  "info": {
+    "singularName": "discount-popup",
+    "pluralName": "discount-popups",
+    "displayName": "DiscountPopup",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Subtext": {
+      "type": "text",
+      "required": true
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Toggle": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

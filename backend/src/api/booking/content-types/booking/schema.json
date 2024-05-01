@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bookings",
+  "info": {
+    "singularName": "booking",
+    "pluralName": "bookings",
+    "displayName": "Bookings",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true,
+    "primaryKey": "Booking_ID"
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "default": "Anonymous"
+    },
+    "Email": {
+      "type": "string",
+      "required": true
+    },
+    "Non_Veg_Adults": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Veg_Adults": {
+      "type": "biginteger"
+    },
+    "Children": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Amount": {
+      "type": "string",
+      "required": true
+    },
+    "Branch": {
+      "type": "string",
+      "required": true
+    },
+    "Phone": {
+      "type": "string",
+      "required": true
+    },
+    "Booking_ID": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Event_Date_Time": {
+      "type": "string",
+      "required": true
+    },
+    "Transaction_ID": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

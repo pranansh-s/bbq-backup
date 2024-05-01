@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://thebbq.company
+
+# Sitemaps
+Sitemap: https://thebbq.company/sitemap.xml
+Sitemap: https://thebbq.company/server-sitemap.xml

@@ -1,0 +1,249 @@
+{
+  "kind": "collectionType",
+  "collectionName": "branches",
+  "info": {
+    "singularName": "branch",
+    "pluralName": "branches",
+    "displayName": "Branches",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Address": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "unique": true,
+      "required": true
+    },
+    "Google_Maps": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "unique": true
+    },
+    "Email": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "email",
+      "required": true
+    },
+    "Description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": true
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Contact": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "Whatsapp": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "Backdrop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Cover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "Prices": {
+      "displayName": "PriceInformation",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "prices.price-information"
+    },
+    "ChildPrice": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "biginteger",
+      "required": false
+    },
+    "Currency": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": false
+    },
+    "GST": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true,
+      "required": false
+    },
+    "Weekdays": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": false,
+      "default": "Mon-Thu"
+    },
+    "Weekends": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": false,
+      "default": "Fri-Sun"
+    },
+    "Coupons": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "coupon.coupon-information"
+    },
+    "New": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "ComingSoon": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "Lunch_12_2": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true
+    },
+    "Lunch_2_3": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true
+    },
+    "Dinner_7_9": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true
+    },
+    "Dinner_9_10": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+    "name": "The Barbeque Company",
+    "short_name": "The BBQ",
+    "description": "Indulge in a mouth-watering feast at our BBQ buffet restaurant! Enjoy succulent meats, freshly grilled veggies, and more at our all-you-can-eat buffet. Satisfy your cravings today at The Barbeque Company!",
+    "keywords": "restaurant, pizza, burger, business, house, online, delevery, html, coffee, cafe, bar",
+    "restaurant-name": "The Barbeque Company - Best barbeque food buffet",
+    "restaurant-name-mini": "The BBQ",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#FC5C2C",
+    "icons": [
+      {
+        "src": "/logo512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      },
+      {
+        "src": "/logo192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/logo64.png",
+        "type": "image/png",
+        "sizes": "64x64"
+      }
+    ]
+  }

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_coupon_coupon_informations",
+  "info": {
+    "displayName": "CouponInformation",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "CouponCode": {
+      "type": "string",
+      "required": true
+    },
+    "Discount": {
+      "type": "biginteger",
+      "required": true
+    },
+    "Percent": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "CurrentUses": {
+      "type": "integer",
+      "default": 0
+    },
+    "MaximumUses": {
+      "type": "integer",
+      "default": 1
+    }
+  }
+}

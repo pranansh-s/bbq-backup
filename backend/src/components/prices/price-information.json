@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_prices_price_informations",
+  "info": {
+    "displayName": "PriceInformation",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Day": {
+      "type": "enumeration",
+      "enum": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "required": true
+    },
+    "Session": {
+      "type": "enumeration",
+      "enum": [
+        "Lunch",
+        "Dinner"
+      ],
+      "required": true
+    },
+    "Veg": {
+      "type": "biginteger",
+      "required": true
+    },
+    "NonVeg": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}
