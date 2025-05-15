@@ -1,4 +1,4 @@
-export default locationId = [
+const locationId = [
 	{
 		"restaurant":"Gorakhpur",
 		"id":"641009e2b312d1500b3b7098"
@@ -32,3 +32,5 @@ export default locationId = [
 		"id":"64250298b313707a1c1e5f45"
 	},
 ]
+
+export default locationId;

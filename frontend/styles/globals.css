@@ -25,6 +25,13 @@
     }
 }
 
+*,
+html,
+body {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
 .slick-list, .slick-track, .slick-slide > div{
     height: 100%;
 }

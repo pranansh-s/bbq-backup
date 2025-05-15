@@ -132,7 +132,7 @@ const Form: FC<{show: boolean, setShow: any, branches: any}> = ({show, setShow, 
 
         <div className={`sm:w-[52rem] w-[200vw] h-max flex ${page == 0 ? 'ml-0' : '-ml-[99.5%]'} transition-all duration-500`}>
             <div className="w-1/2 flex flex-col items-center lg:p-10 p-5 relative">
-              <h4 className="font-fontBold lg:text-3xl text-2xl mb-10">Reserve a Table</h4>
+              <h4 className="font-fontBold lg:text-3xl text-2xl lg:mt-4 mt-10">Reserve a Table</h4>
               <img src="/statics/CrossWhite.svg" alt="" className="h-5 absolute lg:hidden block cursor-pointer right-8 top-4" onClick={() => setShow(false)} />
               <form className="flex flex-col items-center space-y-5">
                   <div className="text-left border-secondary border-b-2 space-y-1 w-full">

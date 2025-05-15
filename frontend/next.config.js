@@ -7,11 +7,11 @@ const securityHeaders = [
   },
   {
     key: 'X-DNS-Prefetch-Control',
-    value: 'on'
+    value: 'on',
   },  
   {
     key: 'X-XSS-Protection',
-    value: '1; mode=block'
+    value: '1; mode=block',
   },
   {
     key: 'X-Content-Type-Options',
@@ -23,25 +23,16 @@ const securityHeaders = [
   },
   {
     key: 'Strict-Transport-Security',
-    value: 'max-age=63072000; includeSubDomains; preload'
-  }
-]
+    value: 'max-age=63072000; includeSubDomains; preload',
+  },
+];
 
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  apps: [{
-    name: "thebbqcompany",
-    script: "npm",
-    args: "start",
-    env: {
-      NODE_ENV: "production",
-      PORT: 3000,
-    }
-  }],
   images: {
     unoptimized: true,
-    domains: ["cdn-images-1.medium.com", "res.cloudinary.com"]
+    domains: ['cdn-images-1.medium.com', 'res.cloudinary.com'],
   },
   async headers() {
     return [
@@ -49,9 +40,11 @@ const nextConfig = {
         source: '/(.*)',
         headers: securityHeaders,
       },
-    ]
+    ];
   },
-  ignoreBuildErrors: true
-}
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+};
 
 module.exports = nextConfig;

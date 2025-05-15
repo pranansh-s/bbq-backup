@@ -73,19 +73,19 @@ const Navbar: FC = () => {
           <Link href="/"><img src={top ? '/logoWeb.svg' : '/logoWebBlack.svg'} alt="BBQ Company" className="lg:h-24 h-16 cursor-pointer" /></Link>
           <div>
             {top ? <img src="/statics/List.svg" alt="" onClick={() => setNav(!nav)} className="cursor-pointer md:hidden block mr-6" /> : <img src="/statics/ListBlack.svg" alt="" onClick={() => setNav(!nav)} className="cursor-pointer md:hidden block mr-6" />}
-            <div className={`flex absolute flex-col bg-primary text-tertiary ${nav && 'border-b border-x border-tertiary '} space-y-3 rounded-b-md mt-4 left-0 text-center text-base ${nav ? 'h-max py-3' : 'h-0 py-0'} w-full overflow-hidden transition-all duration-300`}>
-              <Link className={`hover:text-tertiary/60 transition-all duration-300`} href="/">Home<div className="w-full outline outline-secondary outline-[0.2px] transition-all duration-300"/></Link>
-              <Link className={`hover:text-tertiary/60 transition-all duration-300`} href="/branches">Branches<div className="w-full outline outline-secondary outline-[0.2px] transition-all duration-300"/></Link>
-              <Link className={`hover:text-tertiary/60 transition-all duration-300`} href="/prices">Prices<div className="w-full outline outline-secondary outline-[0.2px] transition-all duration-300"/></Link>
-              <Link className={`hover:text-tertiary/60 transition-all duration-300`} href="/franchise">Franchise<div className="w-full outline outline-secondary outline-[0.2px] transition-all duration-300"/></Link>
-              <Link className={`hover:text-tertiary/60 transition-all duration-300`} href="/contact">Contact Us<div className="w-full outline outline-secondary outline-[0.2px] transition-all duration-300"/></Link>
+            <div className={`flex md:hidden absolute flex-col bg-primary text-tertiary space-y-3 rounded-b-md left-0 text-center text-sm ${nav ? 'h-60 py-2 mt-2' : 'h-0 py-0 mt-0'} w-full overflow-hidden transition-all duration-300`}>
+              <Link className={`hover:text-tertiary/60 transition-all duration-300 border-b-2 pb-3 border-secondary`} href="/">Home</Link>
+              <Link className={`hover:text-tertiary/60 transition-all duration-300 border-b-2 pb-3 border-secondary`} href="/branches">Branches</Link>
+              <Link className={`hover:text-tertiary/60 transition-all duration-300 border-b-2 pb-3 border-secondary`} href="/prices">Prices</Link>
+              <Link className={`hover:text-tertiary/60 transition-all duration-300 border-b-2 pb-3 border-secondary`} href="/franchise">Franchise</Link>
+              <Link className={`hover:text-tertiary/60 transition-all duration-300 border-b-2 pb-3 border-secondary`} href="/contact">Contact Us</Link>
             </div>
             <div className="space-x-8 md:flex hidden">
-              <Link className={`${top ? 'hover:text-tertiary/80' : 'hover:text-primary/60'} transition-all duration-300`} href="/">Home</Link>
-              <Link className={`${top ? 'hover:text-tertiary/80' : 'hover:text-primary/60'} transition-all duration-300`} onMouseEnter={() => setSub(true)} href="/branches">{sub && <SubMenu branches={branches} top={top}/>}Branches</Link>
-              <Link className={`${top ? 'hover:text-tertiary/80' : 'hover:text-primary/60'} transition-all duration-300`} href="/prices">Prices</Link>
-              <Link className={`${top ? 'hover:text-tertiary/80' : 'hover:text-primary/60'} transition-all duration-300`} href="/franchise">Franchise</Link>
-              <Link className={`${top ? 'hover:text-tertiary/80' : 'hover:text-primary/60'} transition-all duration-300`} href="/contact">Contact Us</Link>
+              <Link className={`${top ? 'hover:text-tertiary/80' : 'hover:text-primary/60'} transition-all duration-300 text-sm`} href="/">Home</Link>
+              <Link className={`${top ? 'hover:text-tertiary/80' : 'hover:text-primary/60'} transition-all duration-300 text-sm`} onMouseEnter={() => setSub(true)} href="/branches">{sub && <SubMenu branches={branches} top={top}/>}Branches</Link>
+              <Link className={`${top ? 'hover:text-tertiary/80' : 'hover:text-primary/60'} transition-all duration-300 text-sm`} href="/prices">Prices</Link>
+              <Link className={`${top ? 'hover:text-tertiary/80' : 'hover:text-primary/60'} transition-all duration-300 text-sm`} href="/franchise">Franchise</Link>
+              <Link className={`${top ? 'hover:text-tertiary/80' : 'hover:text-primary/60'} transition-all duration-300 text-sm`} href="/contact">Contact Us</Link>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@ const Navbar: FC = () => {
           <span className="font-fontSemi whitespace-nowrap lg:text-sm text-xs">Book a table</span>
           <img src="/statics/Confetti.svg" alt="" className="h-5"/>
         </Link> : 
-        <Link href={`tel:+91${contact}`} className={`font-fontLight ${top ? 'text-tertiary hover:text-tertiarty/80' : 'text-primary hover:text-primary/80'}  transition-all duration-300 lg:text-base text-sm whitespace-nowrap`}>(+91) {contact}</Link>}
+        <Link href={`tel:+91${contact}`} className={`font-fontLight md:block hidden ${top ? 'text-tertiary hover:text-tertiarty/80' : 'text-primary hover:text-primary/80'}  transition-all duration-300 lg:text-base text-sm whitespace-nowrap`}>(+91) {contact}</Link>}
       </div>
     </>
   )

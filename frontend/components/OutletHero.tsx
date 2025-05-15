@@ -19,7 +19,7 @@ const OutletHero: FC<{branches: any, opening: any, branchName?: string}> = ({bra
       {branch && branch.Backdrop.data ? <img src={branch.Backdrop.data.attributes.url} alt="" className="w-full object-cover left-0 absolute h-[60%] opacity-40"/> : <img src="/template.png" alt="" className="w-full object-cover left-0 absolute h-[60%] opacity-40"/>}
       <div className="flex items-center lg:pt-0 pt-80 w-full justify-between z-10 relative">
         <div className="font-fontRegular lg:text-4xl text-2xl flex flex-col space-y-3">
-          {branch && <h1><span className="font-fontBold">The BBQ Company,</span> {branch.Name}</h1>}
+          {branch && <h1><span className="font-fontBold lg:text-4xl text-2xl">The BBQ Company,</span> {branch.Name}</h1>}
           <div className="flex space-x-1 items-center relative">
             <img src="/statics/StarFill.svg" alt="" className="h-5"/>
             <img src="/statics/StarFill.svg" alt="" className="h-5"/>
