@@ -51,3 +51,5 @@ Make sure you have Node.js (v18+) and your preferred package manager installed.
   ```
 
 Open http://localhost:3000 with your browser to see the result.
+
+*This project was created as part of a freelance engagement.*
